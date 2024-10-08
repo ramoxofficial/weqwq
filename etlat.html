@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ورود اطلاعات</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: #d1e6e3;
+            color: black;
+        }
+        .container {
+            background-color: #A9A9A9;
+            border-radius: 25px;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 300px;
+        }
+        .input-field {
+            border-radius: 15px;
+            padding: 10px;
+            border: none;
+            margin: 10px 0;
+            width: 100%;
+        }
+        .upload-button {
+            margin: 10px 0;
+        }
+        .submit-button {
+            background-color: blue;
+            color: white;
+            padding: 10px;
+            border-radius: 15px;
+            cursor: pointer;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <input type="text" class="input-field" placeholder="نام و نام خانوادگی">
+        <input type="text" class="input-field" placeholder="شماره تلفن">
+        <input type="file" class="upload-button">
+        <button class="submit-button" onclick="submitInfo()">ادامه</button>
+    </div>
+
+    <script>
+        function submitInfo() {
+            // می‌توانید اطلاعات را ذخیره کنید و به صفحه خرید منتقل شوید
+            window.location.href = 'buy.html';
+        }
+    </script>
+</body>
+</html>

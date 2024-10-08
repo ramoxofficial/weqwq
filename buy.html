@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>صفحه خرید</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: #d1e6e3;
+            color: black;
+        }
+        .container {
+            background-color: #A9A9A9;
+            border-radius: 25px;
+            padding: 20px;
+            text-align: center;
+            width: 300px;
+        }
+        .card-info {
+            background-color: blue;
+            color: black;
+            padding: 10px;
+            border-radius: 15px;
+            margin: 10px 0;
+        }
+        .purchase-button {
+            background-color: #A9A9A9;
+            color: white;
+            padding: 10px;
+            border-radius: 25px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card-info">شماره کارت : 5859831229004451</div>
+        <div class="purchase-button" onclick="confirmPurchase()">خرید</div>
+    </div>
+
+    <script>
+        function confirmPurchase() {
+            window.location.href = 'buyokie.html';
+        }
+    </script>
+</body>
+</html>
